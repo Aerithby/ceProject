@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.registration {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.registration h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.verification {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.verification h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.verification p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

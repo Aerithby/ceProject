@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff/Lecturer Dashboard - BINUS University</title>
+    <link rel="stylesheet" href="../css/staff.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/Logo-CE-Master-Color-1.png" alt="BINUS University Logo" class="logo">
+        <h1>Staff / Lecturer Dashboard</h1>
+        <div class="user-info">
+            <span>Welcome, Dr. John Doe</span>
+            <button class="logout-btn"><a href="../html/homepage.html" class="logout-btn">Logout</a></button>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#manage-accounts">Manage Community Accounts</a></li>
+            <li><a href="#approve-reject">Approve/Reject Applications</a></li>
+            <li><a href="#create-account">Create New Community Account</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Welcome to Your Dashboard</h2>
+            <div class="quick-stats">
+                <div class="stat-box">
+                    <h3>Pending Approvals</h3>
+                    <p>15</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Total Community Members</h3>
+                    <p>1,234</p>
+                </div>
+            </div>
+            <div class="activity-feed">
+                <h3>Recent Activity</h3>
+                <ul>
+                    <li>New application received from Jane Smith</li>
+                    <li>Account approved for John Doe</li>
+                    <li>Community event created: "Welcome Week"</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="manage-accounts" class="hidden">
+            <h2>Manage Community Accounts</h2>
+            <input type="text" placeholder="Search accounts..." class="search-bar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>user1</td>
+                        <td>user1@example.com</td>
+                        <td>Student</td>
+                        <td>
+                            <button>View</button>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="approve-reject" class="hidden">
+            <h2>Approve/Reject Applications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Applied Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Student</td>
+                        <td>
+                            <button class="approve-btn">Approve</button>
+                            <button class="reject-btn">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="create-account" class="hidden">
+            <h2>Create New Community Account</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">Select a role</option>
+                    <option value="student">Student</option>
+                    <option value="faculty">Faculty</option>
+                    <option value="staff">Staff</option>
+                </select>
+
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+
+        <section id="reports" class="hidden">
+            <h2>Reports</h2>
+            <div class="report-options">
+                <button>Generate Engagement Report</button>
+                <button>Export User Data</button>
+            </div>
+            <div class="data-visualization">
+                <!-- Placeholder for charts or graphs -->
+                <p>Data visualization would go here</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Community Empowerment</p>
+        <p>Copyright © BINUS Higher Education. All rights reserved</p>
+    </footer>
+</body>
+<script src="../js/dashboard-js.js"></script>
+</html>

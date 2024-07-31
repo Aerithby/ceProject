@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo {
+    max-width: 100px;
+}
+h1 {
+    color: #333;
+}
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+form legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+}
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    margin-top: -10px;
+    color: #666;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+.english {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: normal;
+}
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form textarea {
+    resize: vertical;
+}
+.two-column {
+    display: flex;
+    justify-content: space-between;
+}
+.two-column > div {
+    width: 48%;
+}
+.note {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+}
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.radio-option input[type="radio"] {
+    margin-right: 10px;
+}
+.radio-option label {
+    margin-top: 0;
+    font-weight: normal;
+}
+.checkbox-group {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.binus-info {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+.agreement {
+    font-size: 0.9em;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.signatures div {
+    width: 45%;
+}
+.signatures input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+.signatures label {
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    font-weight: normal;
+}
+button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 30px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+button[type="submit"]:hover {
+    background-color: #FF8C00;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .two-column {
+        flex-direction: column;
+    }
+    .two-column > div {
+        width: 100%;
+    }
+    .signatures {
+        flex-direction: column;
+    }
+    .signatures div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

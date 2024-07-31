@@ -1,0 +1,176 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Stronger, more visible shadow */
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Main content styles */
+.main-content {
+    display: flex;
+    flex: 1;
+    background-color: white;
+}
+
+/* Slider styles */
+.slider {
+    flex: 2;
+    background-color: #e91e63;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('../assets/background-pattern.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.slide-content {
+    text-align: center;
+}
+
+.slide-content h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.slide-content h3 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.rector-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+    border: 5px solid #ffd700;
+}
+
+.slide-content h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* Login form styles */
+.login-form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px; /* Added space between label and input */
+    color: #666;
+}
+
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #007BFF;
+    margin-top: 12px;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button-group a {
+    text-decoration: none;
+}
+
+.register-button, .login-button, .staff-login-link {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.register-button {
+    background-color: #ccc;
+    color: #333;
+}
+
+.login-button {
+    background-color: #FFA500;
+    color: #ffffff;
+}
+
+.staff-login-link {
+    background-color: blue;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+}
+
+.staff-login-container a {
+    text-decoration: none;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Partner Registration Form</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../assets/Logo-CE-Master-Color-1.png" alt="BINUS University Logo" class="logo">
+            <h1>REGISTRATION (PART 1)</h1>
+        </header>
+        <form action="./mitraregistration.html" method="get">
+            <fieldset>
+                <legend>FORMULIR REGISTRASI MITRA</legend>
+                <p class="subtitle">PARTNER REGISTRATION FORM</p>
+                
+                <p>Melalui Lembar Persetujuan ini, saya mewakili komunitas/institusi/organisasi</p>
+                
+                <label for="community_name">Komunitas/Institusi<br><span class="english">Community/Institution</span></label>
+                <input type="text" id="community_name" name="community_name">
+
+                <label for="address">Alamat komunitas/institusi<br><span class="english">Address of community/institution</span></label>
+                <textarea id="address" name="address" rows="3"></textarea>
+
+                <label for="street">Jalan<br><span class="english">Street</span></label>
+                <input type="text" id="street" name="street">
+
+                <div class="two-column">
+                    <div>
+                        <label for="city">Kota/Kabupaten<br><span class="english">City/Regency</span></label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div>
+                        <label for="province">Provinsi<br><span class="english">Province</span></label>
+                        <input type="text" id="province" name="province">
+                    </div>
+                </div>
+
+                <label for="pic_name">Nama PIC<br><span class="english">Name of PIC</span></label>
+                <input type="text" id="pic_name" name="pic_name">
+
+                <label for="position">Jabatan dalam komunitas/institusi<br><span class="english">Position in the community/institution</span></label>
+                <input type="text" id="position" name="position">
+
+                <div class="two-column">
+                    <div>
+                        <label for="phone">Nomor Telp.<br><span class="english">Phone no.</span></label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="email">Email<br><span class="english">Type your Email Here</span></label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+
+                <p class="note">Notes: Pertanyaan berikutnya adalah opsional. (This next question is optional.)<br>*) Pilih salah satu (Please choose one)</p>
+
+                <label for="community_type">Jenis Komunitas/Mitra*<br><span class="english">Type of Community/Partner</span></label>
+                <select id="community_type" name="community_type">
+                    <option value="">Select an option</option>
+                    <option value="global">Global</option>
+                    <option value="global">International</option>
+                </select>
+
+                <label for="community_type">Jika UMKM, sebutkan kluster usahanya*<br><span class="english">If SME, Please mention the business cluster</span></label>
+                <select id="community_type" name="community_type">
+                    <option value="">Select an option</option>
+                    <option value="agribisnis">Agribisnis(Agribusiness)</option>
+                    <option value="agribisnis">Perikanan(Fisheries)</option>
+                    <option value="agribisnis">Pertambangan(Mining)</option>
+                    <!-- <option value="agribisnis">Agribisnis, Perikanan, Pertambangan (Agribusiness, Fisheries, Mining)</option> -->
+                </select>
+
+                <label>Jika UMKM, sebutkan jumlah SDM yang dimiliki*<br><span class="english">If SME, Please mention the number of employee hired</span></label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="sdm_0_3" name="employee_count" value="0_3">
+                        <label for="sdm_0_3">0 - 3</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="sdm_4_10" name="employee_count" value="4_10">
+                        <label for="sdm_4_10">4 - 10</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="sdm_10_plus" name="employee_count" value="10_plus">
+                        <label for="sdm_10_plus">> 10</label>
+                    </div>
+                </div>
+
+                <label for="activity_type">Jenis kegiatan*<br><span class="english">Type of Activity</span></label>
+                <select id="activity_type" name="activity_type">
+                    <option value="">Select an option</option>
+                    <option value="pendampingan">Pendampingan UMKM (SMEs Coaching Clinic)</option>
+                </select>
+
+                <fieldset class="binus-info">
+                    <legend>BINUS UNIVERSITY PIC INFORMATION</legend>
+
+                    <label for="pic_name_binus">Nama PIC BINUS<br><span class="english">Name of BINUS PIC</span></label>
+                    <input type="text" id="pic_name_binus" name="pic_name_binus">
+
+                    <label for="position_binus">Jabatan<br><span class="english">Position</span></label>
+                    <input type="text" id="position_binus" name="position_binus">
+
+                    <label for="lecturer_id">BINUSIAN/Lecturer ID</label>
+                    <input type="text" id="lecturer_id" name="lecturer_id">
+
+                    <div class="two-column">
+                        <div>
+                            <label for="phone_binus">Nomor Telp.<br><span class="english">Phone no.</span></label>
+                            <input type="tel" id="phone_binus" name="phone_binus">
+                        </div>
+                        <div>
+                            <label for="email_binus">Email<br><span class="english">Type your Email Here</span></label>
+                            <input type="email" id="email_binus" name="email_binus">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <label>Apakah ada kontribusi lain (dalam bentuk barang atau tunai) dari lembaga mitra? (Ya/Tidak)<br>
+                <span class="english">Does your other contribution (in-kind or cash) from partner institution? (Yes/No)</span></label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="contribution" name="contribution">
+                    <label for="contribution">Ya</label>
+                </div>
+
+                <label for="contribution_amount">Jika Ya, harap sebutkan jumlahnya<br><span class="english">If Yes, please mention the amount</span></label>
+                <input type="text" id="contribution_amount" name="contribution_amount">
+
+                <p class="agreement">Dengan ini saya bersedia menjadi komunitas binaan Universitas Bina Nusantara dengan menerima pelatihan, penyuluhan, maupun pendampingan, dan/atau bermitra dengan Universitas Bina Nusantara.<br>
+                <span class="english">I am hereby willing to become a member of the Bina Nusantara University community by receiving training, counseling and mentoring, and/or partnering with Bina Nusantara University.</span></p>
+
+                <div class="signatures">
+                    <div>
+                        <input type="text" id="partner_signature" name="partner_signature">
+                        <label for="partner_signature">[Partnering Institution]</label>
+                    </div>
+                    <div>
+                        <input type="text" id="binus_signature" name="binus_signature">
+                        <label for="binus_signature">[BINUS Faculty Member/PIC]</label>
+                    </div>
+                </div>
+                
+                <button type="submit">NEXT</button>
+            </fieldset>
+        </form>
+    </div>  
+</body>
+</html>
